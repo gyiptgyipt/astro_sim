@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>astrobee_gazebo</name>
+  <version>0.0.0</version>
+  <description>
+    Gazebo plugins for the Astrobee simulator
+  </description>
+  <license>
+    Apache License, Version 2.0
+  </license>
+  <author email="astrobee-fsw@nx.arc.nasa.gov">
+    Astrobee Flight Software
+  </author>
+  <maintainer email="astrobee-fsw@nx.arc.nasa.gov">
+    Astrobee Flight Software
+  </maintainer>
+  <build_depend>ament_cmake</build_depend>
+  <build_depend>rclcpp</build_depend>
+  <build_depend>visualization_msgs</build_depend>
+  <build_depend>tf2</build_depend>
+  <build_depend>tf2_ros</build_depend>
+  <build_depend>tf2_msgs</build_depend>
+  <build_depend>tf2_eigen</build_depend>
+  <build_depend>gazebo_ros</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>ff_msgs</build_depend>
+  <build_depend>ff_hw_msgs</build_depend>
+  <build_depend>tf2_geometry_msgs</build_depend>
+  <build_depend>ff_util</build_depend>
+  <build_depend>pmc</build_depend>
+  <build_depend>camera</build_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>jsonloader</build_depend>
+
+  <exec_depend>visualization_msgs</exec_depend>
+  <exec_depend>tf2</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>tf2_msgs</exec_depend>
+  <exec_depend>tf2_eigen</exec_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>ff_msgs</exec_depend>
+  <exec_depend>ff_hw_msgs</exec_depend>
+  <exec_depend>tf2_geometry_msgs</exec_depend>
+  <exec_depend>ff_util</exec_depend>
+  <exec_depend>pmc</exec_depend>
+  <exec_depend>camera</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>jsonloader</exec_depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+    <gazebo_ros gazebo_plugin_path="${prefix}/lib"/>
+    <gazebo_ros plugin_path="${prefix}" />
+    <gazebo_ros gazebo_media_path="${prefix}/worlds"/>
+  </export>
+</package>

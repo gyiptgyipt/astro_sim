@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>jsonloader</name>
+  <version>1.0.0</version>
+  <description>
+    Package for loading json from fplans
+  </description>
+  <license>
+    Apache License, Version 2.0
+  </license>
+  <author email="astrobee-fsw@nx.arc.nasa.gov">
+    Astrobee Flight Software
+  </author>
+  <maintainer email="astrobee-fsw@nx.arc.nasa.gov">
+    Astrobee Flight Software
+  </maintainer>
+  <build_depend>ament_cmake</build_depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

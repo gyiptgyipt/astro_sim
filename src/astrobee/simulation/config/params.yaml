@@ -1,0 +1,5 @@
+gazebo: 
+    ros__parameters: 
+        publish_rate: 125.0
+
+        world: "granite"

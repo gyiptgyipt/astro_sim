@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>arm</name>
+  <version>0.0.0</version>
+  <description>
+    Composite arm procedure
+  </description>
+  <license>
+    Apache License, Version 2.0
+  </license>
+  <author email="astrobee-fsw@nx.arc.nasa.gov">
+    Astrobee Flight Software
+  </author>
+  <maintainer email="astrobee-fsw@nx.arc.nasa.gov">
+    Astrobee Flight Software
+  </maintainer>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>rclcpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>ff_msgs</build_depend>
+  <build_depend>ff_hw_msgs</build_depend>
+  <build_depend>ff_util</build_depend>
+
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>ff_msgs</exec_depend>
+  <exec_depend>ff_hw_msgs</exec_depend>
+  <exec_depend>ff_util</exec_depend>
+  <exec_depend>rclcpp_components</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

@@ -1,0 +1,8 @@
+gen/
+plantuml/
+dds_ros_bridge.dot
+executive.dot
+ff_nodelet.dot
+gazebo_sensor_plugin_perch_cam.dot
+pmc_actuator_nodelet.dot
+sparse_mapping.dot

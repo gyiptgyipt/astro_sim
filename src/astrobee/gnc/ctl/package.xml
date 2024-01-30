@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>ctl</name>
+  <version>0.0.0</version>
+  <description>Calls the GNC simulink auto-generated control code, and passes
+    inputs and outputs to and from ros messages.
+  </description>
+  <license>
+  	Apache License, Version 2.0
+  </license>
+  <author email="astrobee-fsw@nx.arc.nasa.gov">
+    Astrobee Flight Software
+  </author>
+  <maintainer email="astrobee-fsw@nx.arc.nasa.gov">
+    Astrobee Flight Software
+  </maintainer>
+  <build_depend>ament_cmake</build_depend>
+  <build_depend>rclcpp</build_depend>
+  <build_depend>ff_msgs</build_depend>
+  <build_depend>ff_util</build_depend>
+  <build_depend>config_reader</build_depend>
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>ff_msgs</exec_depend>
+  <exec_depend>ff_util</exec_depend>
+  <exec_depend>config_reader</exec_depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

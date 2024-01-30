@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>fam</name>
+  <version>0.0.0</version>
+  <description>
+    Calls the GNC simulink auto-generated code for the force allocation module.
+  </description>
+  <license>
+  	Apache License, Version 2.0
+  </license>
+  <author email="astrobee-fsw@nx.arc.nasa.gov">
+    Astrobee Flight Software
+  </author>
+  <maintainer email="astrobee-fsw@nx.arc.nasa.gov">
+    Astrobee Flight Software
+  </maintainer>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>nodelet</build_depend>
+  <build_depend>ff_msgs</build_depend>
+  <build_depend>ff_hw_msgs</build_depend>
+  <build_depend>ff_util</build_depend>
+  <build_depend>config_reader</build_depend>
+  <build_depend>pmc</build_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>nodelet</exec_depend>
+  <exec_depend>ff_msgs</exec_depend>
+  <exec_depend>ff_util</exec_depend>
+  <exec_depend>ff_msgs</exec_depend>
+  <exec_depend>ff_hw_msgs</exec_depend>
+  <exec_depend>config_reader</exec_depend>
+  <exec_depend>pmc</exec_depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

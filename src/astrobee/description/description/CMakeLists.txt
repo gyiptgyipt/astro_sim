@@ -1,48 +1,35 @@
-# Copyright (c) 2017, United States Government, as represented by the
-# Administrator of the National Aeronautics and Space Administration.
-#
-# All rights reserved.
-#
-# The Astrobee platform is licensed under the Apache License, Version 2.0
-# (the "License"); you may not use this file except in compliance with the
-# License. You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
-# License for the specific language governing permissions and limitations
-# under the License.
-
-# Check to see if correct version of media has been downloaded into tree. We
-# dont do this if we are cross-compiling, as there is no need for it. We must
-# also make sure the media is copied in a native install to a simulator.
-
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.8)
 project(description)
 
-
-# Build for ROS1
-if("$ENV{ROS_VERSION}" STREQUAL "1")
-
-find_package(catkin REQUIRED COMPONENTS)
-
-catkin_package()
-
-# Build for ROS2
-elseif("$ENV{ROS_VERSION}" STREQUAL "2")
-  # Find amend and libraries
-  find_package(ament_cmake REQUIRED)
-
-  set(CATKIN_PACKAGE_SHARE_DESTINATION "share/${PROJECT_NAME}")
-
-  ament_package()
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
+# find dependencies
+find_package(ament_cmake REQUIRED)
+# uncomment the following section in order to fill in
+# further dependencies manually.
+# find_package(<dependency> REQUIRED)
 
-#############
-## Install ##
-#############
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  # the following line skips the linter which checks for copyrights
+  # comment the line when a copyright and license is added to all source files
+  set(ament_cmake_copyright_FOUND TRUE)
+  # the following line skips cpplint (only works in a git repo)
+  # comment the line when this package is in a git repo and when
+  # a copyright and license is added to all source files
+  set(ament_cmake_cpplint_FOUND TRUE)
+  ament_lint_auto_find_test_dependencies()
+endif()
 
-install(DIRECTORY urdf DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
+install(DIRECTORY
+
+  launch
+  urdf
+
+  DESTINATION share/${PROJECT_NAME}/
+)
+
+
+ament_package()

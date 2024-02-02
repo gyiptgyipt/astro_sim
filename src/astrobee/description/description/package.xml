@@ -1,20 +1,19 @@
 <?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>description</name>
   <version>0.0.0</version>
-  <description>
-    Description of the Astrobee Free-Flyer
-  </description>
-  <license>
-    Apache License, Version 2.0
-  </license>
-  <author email="astrobee-fsw@nx.arc.nasa.gov">
-    Astrobee Flight Software
-  </author>
-  <maintainer email="astrobee-fsw@nx.arc.nasa.gov">
-    Astrobee Flight Software
-  </maintainer>
-  <build_depend>ament_cmake</build_depend>
+  <description>TODO: Package description</description>
+  <maintainer email="htetwaiyan.zyme@gmail.com">zyme</maintainer>
+  <license>TODO: License declaration</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <exec_depend>ros2launch</exec_depend>
+
   <export>
     <build_type>ament_cmake</build_type>
   </export>
